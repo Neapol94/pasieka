@@ -1,0 +1,46 @@
+@import url("../index.css");
+
+@import "~react-datepicker/dist/react-datepicker.css";
+
+.toolbar{
+  padding: 20px;
+  display: flex;
+  margin: 20px auto;
+  width: 70%;
+}
+.empty-table-warning {
+  text-align: center;
+}
+
+#articlesTable {
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border-radius: 5px;
+  
+  margin: auto;
+  width: 70%;
+}
+
+#articlesTable td, #articlesTable th {
+  padding: 8px;
+}
+
+#articlesTable tr {
+  transition: all .3s ease-in-out;
+}
+
+#articlesTable tr:nth-child(odd){background-color: var(--thirdColor);}
+#articlesTable tr:nth-child(even){background-color: var(--secondaryColor);}
+
+#articlesTable tr:hover {
+  filter: brightness(90%);
+}
+
+#articlesTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: var(--mainColor);
+  color: white;
+}

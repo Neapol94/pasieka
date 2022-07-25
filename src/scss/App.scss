@@ -1,0 +1,123 @@
+::selection {
+  background: #4a505a;
+  color: #fff;
+}
+
+// body {
+//   background-image: url();
+// }
+input {
+  margin: 10px;
+}
+.App{
+
+  & .addBookForm, & .editBookForm {
+    max-width: 380px;
+    padding: 15px 35px 45px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.1);  
+  
+    .form-signin-heading,
+    .checkbox {
+      margin-bottom: 30px;
+    }
+  
+    .checkbox {
+      font-weight: normal;
+    }
+    label {
+      display: block;
+      padding: 5px 0;
+
+    }
+
+    label.stars{
+      .star-field{
+        width: fit-content;
+        display: inline-block;
+        margin: 0;
+      }
+      img{
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+    }
+  
+    .input {
+      position: relative;
+      font-size: 16px;
+      height: auto;
+      padding: 10px;
+      margin: 5px;
+      border: 1px solid lightgrey;
+      border-radius: 5px;
+  
+      &:focus {
+        z-index: 2;
+      }
+    }
+  }
+
+  
+}
+.article-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  & .article{
+    background-color: #282c34;
+    text-align: left;
+    margin: 10px;
+    padding: 15px 25px;
+    color: #fff;
+    font-size: 20px;
+    min-width: 300px;
+    height: 210px;
+    position: relative;
+
+    p.rate{
+      display: flex;
+
+      & img{
+        margin: 0 5px;
+        color: yellow;
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    .tags li.new{
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: green;
+      font-size: 12px;
+    }
+
+    .buttons-panel{
+      position: absolute;
+      bottom: 10px;
+      display: flex;
+      width: 100%;
+      gap: 10px;
+    }
+
+    & .deleteBookButton{
+      
+    }
+    & .editBookButton{
+    }
+  }
+
+}
+
+p.containerTitle{
+  text-align: center;
+  font-size: 26px;
+  margin-left: 50px;
+}
